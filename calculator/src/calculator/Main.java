@@ -24,26 +24,27 @@ public class Main {
 	        System.out.println("Enter your operation");
 	        operation = input.next();
 	       
+	        int operationResult = 0;
 	        switch (operation)  {
 	       
             case "+":
-            	 System.out.println("Your answer is " + (n1 + n2));
+            	operationResult = (n1 + n2);
                 break;
 
             case "-":
-                System.out.println("Your answer is " + (n1 - n2));
+            	operationResult = (n1 - n2);
                 break;
 
             case "/":
-                System.out.println("Your answer is " + (n1 / n2));
+            	operationResult = (n1 / n2);
                 break;
 
             case "*":
-                System.out.println("Your asnwer is " + (n1 * n2));
-                break;
-
-            }
-	    }
+            	operationResult = (n1 * n2);
+                break; 
+	        }
+	            
+	        System.out.println("The result is" + " " + operationResult);
 	}}
-
+}
 
