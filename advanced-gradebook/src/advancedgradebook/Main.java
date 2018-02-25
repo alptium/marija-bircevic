@@ -33,11 +33,11 @@ public class Main {
 			String answer = user_input.next();
 	
 			if (answer.equals("N"))	
-				break;
-		
-		}
-		System.out.print("Grade sum: " + gradeSum);
+				break;		
 		}
 		
-	}}
+			System.out.print("Grade sum: " + gradeSum);
+		}
+	}	
+}
 		
