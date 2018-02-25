@@ -5,69 +5,69 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner user_input=new Scanner(System.in);
+		Scanner user_input = new Scanner(System.in);
 		
-	String student1_FirstName;
-	System.out.print("Enter 1st students First name ");
-	student1_FirstName=user_input.next();
+		String student1FirstName;
+		System.out.print("Enter 1st students First name ");
+		student1FirstName = user_input.next();
 	
-	String student1_LastName;
-	System.out.print("Enter " + student1_FirstName + "'s" + " Last Name ");
-	student1_LastName=user_input.next();
+		String student1LastName;
+		System.out.print("Enter " + student1FirstName + "'s" + " Last Name ");
+		student1LastName = user_input.next();
 	
-	int student1_Grade;
-	System.out.print("Enter " + student1_FirstName + " " + student1_LastName + " grade ");
-	student1_Grade=user_input.nextInt();
+		int student1Grade;
+		System.out.print("Enter " + student1FirstName + " " + student1LastName + " grade ");
+		student1Grade = user_input.nextInt();
 	
-	String student2_FirstName;
-	System.out.print("Enter 2nd students First name ");
-	student2_FirstName=user_input.next();
+		String student2FirstName;
+		System.out.print("Enter 2nd students First name ");
+		student2FirstName = user_input.next();
 	
-	String student2_LastName;
-	System.out.print("Enter " + student2_FirstName + "'s" + " Last Name ");
-	student2_LastName=user_input.next();
+		String student2LastName;
+		System.out.print("Enter " + student2FirstName + "'s" + " Last Name ");
+		student2LastName = user_input.next();
 	
-	int student2_Grade;
-	System.out.print("Enter " + student2_FirstName + " " + student2_LastName + " grade ");
-	student2_Grade=user_input.nextInt();
+		int student2Grade;
+		System.out.print("Enter " + student2FirstName + " " + student2LastName + " grade ");
+		student2Grade = user_input.nextInt();
 	
-	String student3_FirstName;
-	System.out.print("Enter 3rd students First name ");
-	student3_FirstName=user_input.next();
+		String student3FirstName;
+		System.out.print("Enter 3rd students First name ");
+		student3FirstName = user_input.next();
 	
-	String student3_LastName;
-	System.out.print("Enter " + student3_FirstName + "'s" + " Last Name ");
-	student3_LastName=user_input.next();
+		String student3LastName;
+		System.out.print("Enter " + student3FirstName + "'s" + " Last Name ");
+		student3LastName = user_input.next();
 	
-	int student3_Grade;
-	System.out.print("Enter " + student3_FirstName + " " + student3_LastName + " grade ");
-	student3_Grade=user_input.nextInt();
+		int student3Grade;
+		System.out.print("Enter " + student3FirstName + " " + student3LastName + " grade ");
+		student3Grade = user_input.nextInt();
 	
-	String student4_FirstName;
-	System.out.print("Enter 4th students First name ");
-	student4_FirstName=user_input.next();
+		String student4FirstName;
+		System.out.print("Enter 4th students First name ");
+		student4FirstName = user_input.next();
 	
-	String student4_LastName;
-	System.out.print("Enter " + student4_FirstName + "'s" + " Last Name ");
-	student4_LastName=user_input.next();
+		String student4LastName;
+		System.out.print("Enter " + student4FirstName + "'s" + " Last Name ");
+		student4LastName = user_input.next();
 	
-	int student4_Grade;
-	System.out.print("Enter " + student4_FirstName + " " + student4_LastName + " grade ");
-	student4_Grade=user_input.nextInt();
+		int student4Grade;
+		System.out.print("Enter " + student4FirstName + " " + student4LastName + " grade ");
+		student4Grade = user_input.nextInt();
 	
-	String student5_FirstName;
-	System.out.print("Enter 5th students First name ");
-	student5_FirstName=user_input.next();
+		String student5FirstName;
+		System.out.print("Enter 5th students First name ");
+		student5FirstName = user_input.next();
 	
-	String student5_LastName;
-	System.out.print("Enter " + student5_FirstName + "'s" + " Last Name ");
-	student5_LastName=user_input.next();
+		String student5LastName;
+		System.out.print("Enter " + student5FirstName + "'s" + " Last Name ");
+		student5LastName = user_input.next();
 	
-	int student5_Grade;
-	System.out.print("Enter " + student5_FirstName + " " + student5_LastName + " grade ");
-	student5_Grade=user_input.nextInt();
+		int student5Grade;
+		System.out.print("Enter " + student5FirstName + " " + student5LastName + " grade ");
+		student5Grade = user_input.nextInt();
 	
-	System.out.print("Total grade resault is: " + (student1_Grade + student2_Grade + student3_Grade + student4_Grade + student5_Grade));
+		System.out.print("Total grade result is: " + (student1Grade + student2Grade + student3Grade + student4Grade + student5Grade));
 	
 }
 
