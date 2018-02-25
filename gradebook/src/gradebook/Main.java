@@ -71,6 +71,6 @@ public class Main {
 	
 		System.out.print("Total grade result is: " + (student1Grade + student2Grade + student3Grade + student4Grade + student5Grade));
 	
-}}
-
+		}
+	}
 }

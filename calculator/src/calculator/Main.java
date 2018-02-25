@@ -40,6 +40,8 @@ public class Main {
 	        }
 	            
 			System.out.println("The result is" + " " + operationResult);
-	}}}
+		}
+	}
+}
 
 
