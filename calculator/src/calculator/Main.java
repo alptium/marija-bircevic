@@ -6,8 +6,6 @@ public class Main {
 
 	public static void main(String[] args) {
 	
-		String operation;
-	
 		try(Scanner input = new Scanner(System.in)) {
 			
 			System.out.println("Please enter the first number");
@@ -17,24 +15,24 @@ public class Main {
 			int n2 = input.nextInt();
 
 			System.out.println("Enter your operation");
-			operation = input.next();
+			String operation = input.next();
 	       
 			int operationResult = 0;
-			switch (operation)  {
+			switch (operation) {
 	       
-			case "+":
+				case "+":
 				operationResult = (n1 + n2);
 				break;
 
-			case "-":
+				case "-":
 				operationResult = (n1 - n2);
 				break;
 
-			case "/":
+				case "/":
 				operationResult = (n1 / n2);
 				break;
 
-			case "*":
+				case "*":
 				operationResult = (n1 * n2);
 				break; 
 	        }
