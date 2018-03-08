@@ -18,26 +18,26 @@ public class Main {
 			String operation = input.next();
 	       
 			int operationResult = 0;
+			
 			switch (operation) {
-	       
 				case "+":
-				operationResult = (n1 + n2);
-				break;
+					operationResult = (n1 + n2);
+					break;
 
 				case "-":
-				operationResult = (n1 - n2);
-				break;
+					operationResult = (n1 - n2);
+					break;
 
 				case "/":
-				operationResult = (n1 / n2);
-				break;
+					operationResult = (n1 / n2);
+					break;
 
 				case "*":
-				operationResult = (n1 * n2);
-				break; 
+					operationResult = (n1 * n2);
+					break; 
 	        }
 	            
-			System.out.println("The result is" + " " + operationResult);
+			System.out.println("The result is: " + operationResult);
 		}
 	}
 }
