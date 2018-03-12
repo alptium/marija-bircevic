@@ -15,9 +15,6 @@ public class Main {
 
 			while (true) {
 
-				swimmer swimmer = new swimmer();
-				swimmer = new swimmer();
-
 				System.out.print(" Please insert swimmer's registration number");
 				int swimmerRegistrationNumber = sc.nextInt();
 

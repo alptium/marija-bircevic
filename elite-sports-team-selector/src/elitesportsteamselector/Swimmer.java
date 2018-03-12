@@ -1,6 +1,6 @@
 package elitesportsteamselector;
 
-public class swimmer {
+public class Swimmer {
 
 	private int registrationNumber;
 	private String firstName;
