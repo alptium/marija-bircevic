@@ -8,17 +8,15 @@ public class Main {
 
 		System.out.println("Welcome, this is application for professional swimmers!");
 		System.out.println("Please, follow the instructions and fill in the application.");
-
-		runDemoswimmer();
-	}
-
-	private static void runDemoswimmer() {
 		System.out.println("Add new swimmer");
 		System.out.println();
 
 		try (Scanner sc = new Scanner(System.in)) {
 
 			while (true) {
+
+				swimmer swimmer = new swimmer();
+				swimmer = new swimmer();
 
 				System.out.print(" Please insert swimmer's registration number");
 				int swimmerRegistrationNumber = sc.nextInt();
@@ -46,7 +44,7 @@ public class Main {
 
 				if (swimmerAge < 16 && swimmerGender == ("F")) {
 					System.out.println("Sorry, the application is REJECTED");
-					
+
 				} else if (swimmerStartingSpeed > 6 && swimmerSpeedTurns > 3) {
 					System.out.println("Sorry, the application is REJECTED");
 
@@ -54,6 +52,24 @@ public class Main {
 					System.out.println("Congratulations, the application is ACCEPTED");
 				}
 
+				System.out.println("Do you want to enter a new swimmer? yes/no");
+				System.out.println();
+
+				String exit = sc.next();
+
+				if (exit.equals("no")) {
+					break;
+				} else
+					while (!exit.equals("no") && !exit.equals("yes")) {
+						System.out.println("You entered the wrong word, plase response with yes or no!");
+						System.out.println("Do you want to enter a new swimmer? yes/no");
+						System.out.println();
+						exit = sc.next();
+					}
+
+				if (exit.equals("no")) {
+					break;
+				}
 			}
 		}
 	}
