@@ -2,7 +2,6 @@ package elitesportsteamselector;
 
 public class Swimmer {
 
-	private int registrationNumber;
 	private String firstName;
 	private String lastName;
 	private int age;
@@ -11,10 +10,9 @@ public class Swimmer {
 	private int startingSpeed;
 	private int speedTurns;
 
-	public void employees(int registrationNumber, String firstName, String lastName, int age, String gender,
+	public void employees(String firstName, String lastName, int age, String gender,
 			String style, int startingSpeed, int speedTurns) {
 
-		this.registrationNumber = registrationNumber;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
@@ -22,14 +20,6 @@ public class Swimmer {
 		this.style = style;
 		this.startingSpeed = startingSpeed;
 		this.speedTurns = speedTurns;
-	}
-
-	public int getregistrationNumber() {
-		return registrationNumber;
-	}
-
-	public void setregistrationNumber(int registrationNumber) {
-		this.registrationNumber = registrationNumber;
 	}
 
 	public String getFirstName() {

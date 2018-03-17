@@ -15,9 +15,6 @@ public class Main {
 
 			while (true) {
 
-				System.out.print(" Please insert swimmer's registration number");
-				int swimmerRegistrationNumber = sc.nextInt();
-
 				System.out.print("Please enter swimmer's First name: ");
 				String swimmerFirstName = sc.next();
 
@@ -39,10 +36,8 @@ public class Main {
 				System.out.print("Please enter swimmer's speed turns:");
 				int swimmerSpeedTurns = sc.nextInt();
 
-				if (swimmerAge < 16 && swimmerGender == ("F")) {
-					System.out.println("Sorry, the application is REJECTED");
-
-				} else if (swimmerStartingSpeed > 6 && swimmerSpeedTurns > 3) {
+				if (swimmerAge < 16 && swimmerGender == ("F") && swimmerStyle == ("breaststroke")
+						&& swimmerStartingSpeed > 6 && swimmerSpeedTurns > 3) {
 					System.out.println("Sorry, the application is REJECTED");
 
 				} else {

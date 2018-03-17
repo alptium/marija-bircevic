@@ -8,9 +8,10 @@ public class Client {
 	private double salary;
 	private boolean isMarried;
 	private boolean isFullTimeEmployee;
-	private int amount;
-	
-	public Client(String firstName, String lastName, int age, double salary, boolean isMarried, boolean isFullTimeEmployee, int amount){
+	private int credit;
+
+	public Client(String firstName, String lastName, int age, double salary, boolean isMarried,
+			boolean isFullTimeEmployee, int credit) {
 
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -18,7 +19,7 @@ public class Client {
 		this.salary = salary;
 		this.isMarried = isMarried;
 		this.isFullTimeEmployee = isFullTimeEmployee;
-		this.amount = amount;
+		this.credit = credit;
 
 	}
 
@@ -33,25 +34,26 @@ public class Client {
 	public int getage() {
 		return age;
 	}
+
 	public double getSalary() {
 		return salary;
 	}
-	
+
 	public boolean isMarried() {
 		return isMarried;
 	}
-	
+
 	public boolean isFullTimeEmployee() {
 		return isFullTimeEmployee;
 	}
-	
-	public int getamount() {
-		return amount;
+
+	public int getcredit() {
+		return credit;
 	}
 
 	public int size() {
-		
+
 		return 0;
 	}
-		
+
 }
