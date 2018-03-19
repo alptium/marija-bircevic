@@ -1,5 +1,6 @@
 package elitesportsteamselector;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -10,6 +11,9 @@ public class Main {
 		System.out.println("Please, follow the instructions and fill in the application.");
 		System.out.println("Add new swimmer");
 		System.out.println();
+
+		ArrayList<Swimmer> acceptedSwimmer = new ArrayList<>();
+		ArrayList<Swimmer> rejectedSwimmer = new ArrayList<>();
 
 		try (Scanner sc = new Scanner(System.in)) {
 
@@ -36,12 +40,19 @@ public class Main {
 				System.out.print("Please enter swimmer's speed turns:");
 				int swimmerSpeedTurns = sc.nextInt();
 
-				if (swimmerAge < 16 && swimmerGender == ("F") && swimmerStyle == ("breaststroke")
-						&& swimmerStartingSpeed > 6 && swimmerSpeedTurns > 3) {
+				Swimmer swimmer = new Swimmer(swimmerFirstName, swimmerLastName, swimmerAge, swimmerStyle,
+						swimmerGender, swimmerStartingSpeed, swimmerSpeedTurns);
+
+				if (swimmer.getage() < 16 || swimmer.getgender() == ("F") || swimmer.getstyle() == ("breaststroke")
+						|| swimmer.getstartingSpeed() > 6 || swimmer.getspeedTurns() > 3) {
 					System.out.println("Sorry, the application is REJECTED");
+					System.out.println();
+					rejectedSwimmer.add(swimmer);
 
 				} else {
 					System.out.println("Congratulations, the application is ACCEPTED");
+					System.out.println();
+					acceptedSwimmer.add(swimmer);
 				}
 
 				System.out.println("Do you want to enter a new swimmer? yes/no");
@@ -63,6 +74,41 @@ public class Main {
 					break;
 				}
 			}
+
+			System.out.println("List of accepted swimmers:");
+			System.out.println();
+
+			int i = 1;
+
+			for (Swimmer swimmer : acceptedSwimmer) {
+				System.out.println("" + i + "." + "\t" + swimmer.getFirstName() + "\t" + swimmer.getLastName());
+				i++;
+			}
+
+			System.out.println("List of rejected candidates:");
+			System.out.println();
+
+			int j = 1;
+
+			for (Swimmer swimmer : rejectedSwimmer) {
+				System.out.println("" + j + "." + "\t" + swimmer.getFirstName() + "\t" + swimmer.getLastName());
+				j++;
+			}
+
+			int acceptedSwimmerCount = acceptedSwimmer.size();
+			int rejectedSwimmerCount = rejectedSwimmer.size();
+			int totalSwimmerCount = acceptedSwimmerCount + rejectedSwimmerCount;
+
+			double acceptedSwimmerPercent = (double) acceptedSwimmerCount * 100 / totalSwimmerCount;
+			double rejectedSwimmerPercent = (double) rejectedSwimmerCount * 100 / totalSwimmerCount;
+
+			System.out.println();
+			System.out.println("Total number of applied candidates is: " + totalSwimmerCount);
+			System.out.println("Total number of candidates that were accepted is " + acceptedSwimmerCount
+					+ ", that makes" + "\t" + acceptedSwimmerPercent + "%");
+			System.out.println("Total number of candidates that were rejected is " + rejectedSwimmerCount
+					+ ", that makes" + "\t" + rejectedSwimmerPercent + "%");
+
 		}
 	}
 }

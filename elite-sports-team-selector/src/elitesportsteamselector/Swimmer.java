@@ -10,8 +10,8 @@ public class Swimmer {
 	private int startingSpeed;
 	private int speedTurns;
 
-	public void employees(String firstName, String lastName, int age, String gender,
-			String style, int startingSpeed, int speedTurns) {
+	public Swimmer(String firstName, String lastName, int age, String gender, String style, int startingSpeed,
+			int speedTurns) {
 
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -26,56 +26,28 @@ public class Swimmer {
 		return firstName;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
 	public String getLastName() {
 		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
 	}
 
 	public int getage() {
 		return age;
 	}
 
-	public void setage(int age) {
-		this.age = age;
-	}
-
 	public String getgender() {
 		return gender;
-	}
-
-	public void setgender(String gender) {
-		this.gender = gender;
 	}
 
 	public String getstyle() {
 		return style;
 	}
 
-	public void setstyle(String style) {
-		this.style = style;
-	}
-
 	public int getstartingSpeed() {
 		return startingSpeed;
 	}
 
-	public void setstartingSpeed(int startingSpeed) {
-		this.startingSpeed = startingSpeed;
-	}
-
 	public int getspeedTurns() {
 		return speedTurns;
-	}
-
-	public void setspeedTurns(int speedTurns) {
-		this.speedTurns = speedTurns;
 	}
 
 }
